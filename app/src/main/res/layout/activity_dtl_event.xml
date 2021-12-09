@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActDtlEvent"
+    android:background="@color/background_dark" >
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swpRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txvEventLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_event"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvEventLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/txvClientLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvEvent"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_client"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvClientLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txvDatetimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvClient"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_datetime"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvDatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvDatetimeLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txvDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvDatetime"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_description"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvDescriptionLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/darker_gray"
+            android:text="@string/delete"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:text="@string/update"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

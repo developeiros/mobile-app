@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="13dp"
+    tools:context=".ActMenu">
+
+    <TextView
+        android:id="@+id/txvWelcome"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="@string/welcome_back"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvWelcome"
+        android:fontFamily="@font/lato"
+        android:text="@string/select"
+        android:textColor="@color/white" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="266dp">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/btnEmployee"
+                android:layout_width="174dp"
+                android:layout_height="174dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/dark_gray">
+
+                <ImageView
+                    android:id="@+id/imgEmployee"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/employees"
+                    android:src="@drawable/ic_employee" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgEmployee"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/employees"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnService"
+                android:layout_width="174dp"
+                android:layout_height="174dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/dark_gray">
+
+                <ImageView
+                    android:id="@+id/imgService"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/employees"
+                    android:src="@drawable/ic_service" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgService"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/services"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/btnClient"
+                android:layout_width="174dp"
+                android:layout_height="174dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/dark_gray">
+
+                <ImageView
+                    android:id="@+id/imgClient"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/employees"
+                    android:src="@drawable/ic_client" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgClient"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/clients"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnEvent"
+                android:layout_width="174dp"
+                android:layout_height="174dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/dark_gray">
+
+                <ImageView
+                    android:id="@+id/imgEvent"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/employees"
+                    android:src="@drawable/ic_event" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgEvent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/events"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

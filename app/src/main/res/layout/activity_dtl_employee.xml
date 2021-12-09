@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActDtlEmployee"
+    android:background="@color/background_dark" >
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swpRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txvLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_login"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvLoginLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/txvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvLogin"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_name"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvNameLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txvTelephoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvName"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_telephone"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvTelephoneLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txvAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvTelephone"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_address"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvAddressLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvAddress"
+            android:fontFamily="@font/lato"
+            android:text="@string/label_email"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvEmailLabel"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/light_gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvEmail"
+            android:backgroundTint="@color/dark_gray"
+            android:text="@string/see_services"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/darker_gray"
+            android:text="@string/delete"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:text="@string/update"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
